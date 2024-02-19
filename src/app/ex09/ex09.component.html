@@ -5,9 +5,13 @@
   <tr>
     <th>Name</th><th>Position</th><th>Salary</th>
   </tr>
-<!--  <tr *ngFor="let e of employees">-->
-<!--    <td>{{ e.name }}</td>-->
-<!--    <td>{{ e.position }}</td>-->
-<!--    <td>{{ e.salary }}</td>-->
-<!--  </tr>-->
+  <tr *ngFor="let e of employees">
+    <td>{{ e.name }}</td>
+    <td>{{ e.position }}</td>
+    <td>{{ e.salary }}</td>
+  </tr>
+
+  <button (click)="orderBy('name')">Sort by: Name</button>
+  <button (click)="orderBy('position')">Sort by: Name</button>
+  <button (click)="orderBy('salary')">Sort by: Name</button>
 </table>

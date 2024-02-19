@@ -12,11 +12,16 @@ import {FormsModule} from "@angular/forms";
 })
 export class Ex06Component {
   celcius: number = 0;
-  fahrenheit: number = 0;
+  fahrenheit: number = 0  ;
 
   constructor() {
   }
 
+  onlyNumber(e:KeyboardEvent){
+    if(isNaN(Number(e.key))){
+      e.preventDefault();
+    }
+  }
   ngOnInit(): void {
   }
 

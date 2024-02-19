@@ -2,12 +2,15 @@
 <h2>*ngFor</h2>
 <h3>Structural directive</h3>
 <b>Numbers:</b>
-<p *ngFor="let n of numbers">
+
+<a *ngFor="let n of numbers">
   {{ n }}
-</p>
+</a>
+
+<br>
 
 <b>Fruits:</b>
-<p *ngFor="let f of fruits">
-  {{ f }}
-</p>
+<a *ngFor="let f of fruits">
+  {{ f.toUpperCase() }}
+</a>
 
